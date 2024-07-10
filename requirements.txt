@@ -1,1 +1,11 @@
 streamlit
+matplotlib.pyplot
+seaborn
+pandas
+numpy
+requests
+urllib.request
+json
+plotly
+plotly.express
+requests
