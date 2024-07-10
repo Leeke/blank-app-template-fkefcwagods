@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 import requests
 from io import StringIO
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 from urllib.request import urlopen
 import plotly.express as px
 import requests
