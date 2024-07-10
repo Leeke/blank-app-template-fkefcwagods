@@ -5,10 +5,10 @@ import requests
 from io import StringIO
 #import matplotlib.pyplot as plt
 #import seaborn as sns
-from urllib.request import urlopen
+#from urllib.request import urlopen
 import plotly.express as px
 import requests
-import json
+#import json
 
 # path to data csvs
 url_owid = 'https://raw.githubusercontent.com/Leeke/blank-app-template-fkefcwagods/main/hadcrut-surface-temperature-anomaly.csv'
