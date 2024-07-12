@@ -29,7 +29,7 @@ def load_original_data(url):
     
 owid_df = load_original_data(url_owid)
 git_df = load_original_data(url_git)
-kaggle_df = load_original_data(url_kaggle)
+#kaggle_df = load_original_data(url_kaggle)
 merge_df = load_original_data(url_merge)
 merge_df = merge_df.drop(merge_df.columns[0], axis=1)
 
@@ -66,7 +66,7 @@ elif page == pages[1] :
   st.markdown(
     """Data on Co2 and other greenhouse gas emissions (co2, ghg, n2o, ch4) as well as gpd, population by country and year.
       This dataset was identified as highly relevant as it contained information on many relevant variables such as gross domestic product (GDP), population numbers, energy consumption levels, and greenhouse gas emissions. 
-      Greenhouse gas emissions are divided into emissions in tonnes by CO2, methane-, total greenhouse gases-, and nitrious oxide and are given in absolute numbers and scaled by population.<br> 
+      Greenhouse gas emissions are divided into emissions in tonnes by CO2, methane-, total greenhouse gases-, and nitrious oxide and are given in absolute numbers and scaled by population. 
       Moreover, contributions to CO2 emissions are subdivided into industries such as cement, consumption, energy, coal, gas, oil, trade, other industries, and land use change. While the variables in the data set were judged highly relevant, the completeness varies from ~14% of values missing for population values to over 91% for other industries. Moreover, different countries had different numbers of years of data available. For
       1
       instance, for Germany, data is available from 1792 to 2022, whereas for Serbia, only data from 1850 onwards are included. Thus, there is an additional source of missingness in the data that does not show up in the data set as NaNs.
