@@ -14,7 +14,7 @@ import requests
 url_owid = 'https://raw.githubusercontent.com/Leeke/blank-app-template-fkefcwagods/main/hadcrut-surface-temperature-anomaly.csv'
 url_git = 'https://raw.githubusercontent.com/Leeke/blank-app-template-fkefcwagods/main/Towid-co2-data.csv'
 #url_merge = 'https://raw.githubusercontent.com/Leeke/blank-app-template-fkefcwagods/main/merge3.csv'
-url_kaggle = 'https://raw.githubusercontent.com/Leeke/blank-app-template-fkefcwagods/main/merge.csv'
+#url_kaggle = 'https://raw.githubusercontent.com/Leeke/blank-app-template-fkefcwagods/main/Towid-co2-data.csv'
 url_merge = 'https://raw.githubusercontent.com/Leeke/blank-app-template-fkefcwagods/main/merge.csv'
 url_owid_continents = 'https://raw.githubusercontent.com/Leeke/blank-app-template-fkefcwagods/main/continents-according-to-our-world-in-data.csv'
 
@@ -45,7 +45,7 @@ elif page == pages[1] :
   st.header("Data Exploration")
 
   st.markdown(
-    """We analyzed 3 publicly available data sets:"""
+    """We mainly used 2 publicly available data sets for our analysis:"""
   )
   st.write("### OWID Dataset")
   st.markdown(
@@ -87,25 +87,6 @@ elif page == pages[1] :
   expand = st.expander("Percentage of NAs per Column", icon=":material/info:")
   expand.write("Percentage of NAs per Column")
   expand.write(na_percentages_df)
-
-
-
-
-  st.write("### Kaggle Dataset")
-  st.markdown(
-    """The Kaggle data set contains temperature change per month, year and country.
-        This data set was only used for visualizations and not for the modeling part. This was done because the monthly resolution did not fit the yearly GitData resolution and had limited usability as it only dates back to 1961.
-        Period: 1961-2020"""
-    )
-  st.write("Dataset")
-  st.dataframe(kaggle_df.head(10))
-  st.write("Dataset shape")
-  st.write(kaggle_df.shape)
-  st.write("Dataset describtion")
-  st.dataframe(kaggle_df.describe())
-
-  st.write("Percentage of NAs per Column: 0")
-
 
   st.write("### Data Merge")
   st.markdown(
